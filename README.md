@@ -31,7 +31,7 @@ Se define la idea inicial la cual puede cambiar antes de crear el primer proyect
 |Observabilidad|Prometheus + Grafana + ELK|No basta con logs; necesitamos métricas (Prometheus) y trazabilidad distribuida (Jaeger o Zipkin) para ver el viaje de una petición entre microservicios.
 
 # Puntos Extra
-Para que el proyecto sea "blindado" y digno de un Arquitecto de Sistemas senior, deberíamos incluir:
+Para que el proyecto sea **blindado** y digno de un Arquitecto de Sistemas senior, deberíamos incluir:
 
 1. **Resilience4j:** Implementar patrones de Circuit Breaker y Retry. Si el servicio de pagos falla, la tienda no debe morir.
 2. **Secret Management:** No hardcodear credenciales. Usar HashiCorp Vault o los Secrets de K8s.
