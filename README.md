@@ -56,7 +56,8 @@ Para que sea realmente escalable y resiliente, el flujo se organiza así:
 
 5. **Metodología de desarrollo:**
 
-# Capa de Soporte `(Observabilidad y Calidad)`
-1. **Sidecars/Agents:** En Kubernetes, incluiremos agentes para enviar logs a `ELK` y métricas a `Prometheus`.
+# Capa de Soporte 
+> Observabilidad y Calidad
+1. **Sidecars/Agents:** En Kubernetes, incluiremos agentes para enviar `logs a ELK` y `métricas a Prometheus`.
 2. **Pipeline de CI/CD:** Aquí es donde integramos `SonarQube y Snyk` para que cada commit sea analizado antes de llegar a los pods.
 
