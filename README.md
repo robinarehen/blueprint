@@ -1,2 +1,1 @@
-# blueprint
-Plantilla de Referencia (blueprint)
+# Plantilla de Referencia (blueprint)
