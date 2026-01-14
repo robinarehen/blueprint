@@ -30,6 +30,37 @@ Se define la idea inicial la cual puede cambiar antes de crear el primer proyect
 |Infraestructura|Docker + Kubernetes (K8s)|Si ya conoces OpenShift, K8s puro te dará la base para entender cualquier nube (AWS EKS, Azure AKS).
 |Observabilidad|Prometheus + Grafana + ELK|No basta con logs; necesitamos métricas (Prometheus) y trazabilidad distribuida (Jaeger o Zipkin) para ver el viaje de una petición entre microservicios.
 
+## ELK Stack (Logs y Búsqueda)
+**ELK** es el acrónimo de tres herramientas de código abierto que trabajan juntas:
+1. **Elasticsearch:** Un motor de búsqueda y analítica (donde se guarda la data).
+2. **Logstash:** El procesador que recibe, transforma y envía los logs.
+3. **Kibana:** La interfaz gráfica (dashboards) para visualizar esos logs.
+
+> **¿Por qué ELK?** Es el estándar de la industria. Su capacidad para indexar grandes volúmenes de texto y permitir búsquedas casi instantáneas en millones de líneas de logs es inigualable.
+
+### Otras opciones (Alternativas a ELK):
+
+1. **EFK (Elasticsearch, Fluentd, Kibana):** Es casi igual, pero cambia Logstash por Fluentd. Es la opción preferida en entornos de Kubernetes porque consume menos memoria.
+2. **Loki (de Grafana Labs):** Es la alternativa moderna. A diferencia de ELK, Loki no indexa todo el contenido del log, sino solo las etiquetas (metadata). Esto lo hace mucho más barato y ligero de mantener. Si quieres algo muy "Cloud Native", Loki es el fuerte competidor actual.
+
+## Prometheus (Métricas y Alertas)
+Mientras ELK se encarga de los Logs (eventos específicos: `El usuario X compró el item Y`), Prometheus se encarga de las Métricas (números y estados: `¿Cuánta CPU consume el servicio?`, `¿Cuántas peticiones por segundo hay?`).
+
+**¿Por qué Prometheus?**
+
+1. **Modelo Pull:** Él le `pregunta` a tus microservicios su estado cada X segundos, lo que evita que el microservicio se sobrecargue enviando data.
+2. **Integración nativa con K8s:** Kubernetes y Prometheus hablan el mismo idioma.
+3. **PromQL:** Un lenguaje de consultas muy potente para generar alertas complejas.
+
+### Comparativa
+
+|Necesidad			|Herramienta Líder			|Alternativa `Moderna/Ligera`
+|-                  |-                          |-
+|Logs (Texto)		|ELK (Potente, pesado)  |Loki (Ligero, integrado con Grafana)
+|Métricas (Números)	|Prometheus (Estándar K8s) 	|VictoriaMetrics (Alto rendimiento)
+|Visualización		|Kibana (Solo para ELK)    	|Grafana (Visualiza Logs, Métricas y Trazas)
+
+
 # Puntos Extra
 Para que el proyecto sea **blindado** y digno de un Arquitecto de Sistemas senior, deberíamos incluir:
 
