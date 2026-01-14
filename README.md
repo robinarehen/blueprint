@@ -19,6 +19,8 @@ Para que el proyecto sea robusto, sugiero que no sea un monolito, sino un ecosis
 4. **Servicio de Pagos/Notificaciones:** Consumidores de Kafka que procesan tareas pesadas sin bloquear al usuario.
 
 # Stack Tecnológico y Mejores Prácticas
+Se define la idea inicial la cual puede cambiar antes de crear el primer proyecto.
+
 |Categoría|Herramientas Sugeridas|¿Por qué?
 |---------|----------------------|------
 |Desarrollo Asíncrono|Spring Boot 3 + WebFlux + R2DBC|WebFlux es excelente, pero para que sea 100% no bloqueante, la conexión a la DB también debe serlo (R2DBC).
@@ -27,3 +29,12 @@ Para que el proyecto sea robusto, sugiero que no sea un monolito, sino un ecosis
 |DevOps / CI-CD|GitHub Actions|Para proyectos modernos, su integración con el repositorio es superior a Jenkins en agilidad y mantenimiento de "Pipelines as Code".
 |Infraestructura|Docker + Kubernetes (K8s)|Si ya conoces OpenShift, K8s puro te dará la base para entender cualquier nube (AWS EKS, Azure AKS).
 |Observabilidad|Prometheus + Grafana + ELK|No basta con logs; necesitamos métricas (Prometheus) y trazabilidad distribuida (Jaeger o Zipkin) para ver el viaje de una petición entre microservicios.
+
+# Puntos Extra
+Para que el proyecto sea "blindado" y digno de un Arquitecto de Sistemas senior, deberíamos incluir:
+
+1. **Resilience4j:** Implementar patrones de Circuit Breaker y Retry. Si el servicio de pagos falla, la tienda no debe morir.
+2. **Secret Management:** No hardcodear credenciales. Usar HashiCorp Vault o los Secrets de K8s.
+3. **Infrastructure as Code (IaC):** Usar Terraform para crear tu cluster de Kubernetes. Es mejor que crearlo manualmente.
+4. **Pruebas de Carga:** Usar k6 o JMeter para demostrar que tu arquitectura realmente aguanta el volumen de datos que planeas.
+
