@@ -51,3 +51,12 @@ Para que sea realmente escalable y resiliente, el flujo se organiza así:
 
 3. **Capa de Eventos `(Event-Driven)`:**
    1. **Kafka:** Actúa como el sistema de mensajería asíncrona. Por ejemplo, cuando se crea una orden, el servicio de órdenes publica un evento y el servicio de `inventario, pagos y notificaciones` lo consumen de forma independiente.
+
+4. **Patrón de desarrollo:**
+
+5. **Metodología de desarrollo:**
+
+# Capa de Soporte `(Observabilidad y Calidad)`
+1. **Sidecars/Agents:** En Kubernetes, incluiremos agentes para enviar logs a `ELK` y métricas a `Prometheus`.
+2. **Pipeline de CI/CD:** Aquí es donde integramos `SonarQube y Snyk` para que cada commit sea analizado antes de llegar a los pods.
+
