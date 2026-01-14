@@ -38,3 +38,16 @@ Para que el proyecto sea **blindado** y digno de un Arquitecto de Sistemas senio
 3. **Infrastructure as Code (IaC):** Usar Terraform para crear tu cluster de Kubernetes. Es mejor que crearlo manualmente.
 4. **Pruebas de Carga:** Usar k6 o JMeter para demostrar que tu arquitectura realmente aguanta el volumen de datos que planeas.
 
+# Análisis de la Arquitectura
+Para que sea realmente escalable y resiliente, el flujo se organiza así:
+
+1. **Capa de Entrada `(Edge)`:**
+    1. **Spring Cloud Gateway:** Maneja el enrutamiento, seguridad (OAuth2/JWT) y Rate Limiting.
+
+2. **Capa de Negocio `(Reactive Core)`:**
+   1. **Microservicios con WebFlux:** Cada servicio es independiente y maneja su propia base de datos `(Database per Service)`.
+
+   2. **R2DBC / Drivers Reactivos:** Fundamental para no bloquear hilos de ejecución en las consultas a DB.
+
+3. **Capa de Eventos `(Event-Driven)`:**
+   1. **Kafka:** Actúa como el sistema de mensajería asíncrona. Por ejemplo, cuando se crea una orden, el servicio de órdenes publica un evento y el servicio de `inventario, pagos y notificaciones` lo consumen de forma independiente.
