@@ -52,9 +52,13 @@ Para que sea realmente escalable y resiliente, el flujo se organiza así:
 3. **Capa de Eventos `(Event-Driven)`:**
    1. **Kafka:** Actúa como el sistema de mensajería asíncrona. Por ejemplo, cuando se crea una orden, el servicio de órdenes publica un evento y el servicio de `inventario, pagos y notificaciones` lo consumen de forma independiente.
 
-4. **Patrón de desarrollo:**
+4. **Seguridad y Resiliencia:** Para que sea una arquitectura **top**, incluiremos en el diseño:
+   1. **Circuit Breaker (Resilience4j):** Si Kafka llegara a tener un retraso o un microservicio falla, el sistema debe responder con un fallback o una respuesta degradada en lugar de colapsar.
+   2. **Config Maps & Secrets:** Gestión de variables de entorno de forma segura dentro de tu cluster.
 
-5. **Metodología de desarrollo:**
+6. **Patrón de desarrollo:**
+
+7. **Metodología de desarrollo:**
 
 # Capa de Soporte 
 > Observabilidad y Calidad
