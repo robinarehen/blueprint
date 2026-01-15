@@ -6,7 +6,7 @@ Se inicia este proyecto con la ayuda de **Google Gemini**, con el fin de crear u
 2. Resiliencia y Eficiencia 
 3. Seguridad 
 4. Optimización de costos 
-5. Buenas practicas  ****
+5. Buenas practicas
 
 La meta es aplicar las mejores prácticas en arquitectura y desarrollo con una metodología **[DevSecOps](https://aws.amazon.com/es/what-is/devsecops/)**, será un proyecto colaborativo, donde a medida que se avanza, espero poder contar con la ayuda de personas que tenga conocimiento y/o experiencia en el ámbito que yo no pueda cubrir. 
 
