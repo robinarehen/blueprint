@@ -81,6 +81,9 @@
         <mxCell id="Y5DpHpY7eMORRWgUIDYY-10" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Azure_Spring_Cloud.svg;" value="Api Order" vertex="1">
           <mxGeometry height="68" width="68" x="479" y="360" as="geometry" />
         </mxCell>
+        <mxCell id="_5aWV9HYA6SHLXZJDk72-1" edge="1" parent="1" source="Y5DpHpY7eMORRWgUIDYY-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Y5DpHpY7eMORRWgUIDYY-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Y5DpHpY7eMORRWgUIDYY-15" parent="1" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#bac8d3;strokeColor=#23445d;shape=mxgraph.alibaba_cloud.kafka;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" value="KAFKA" vertex="1">
           <mxGeometry height="42" width="56.699999999999996" x="619" y="361" as="geometry" />
         </mxCell>
@@ -102,7 +105,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Y5DpHpY7eMORRWgUIDYY-21" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Azure_Spring_Cloud.svg;" value="Api Payment" vertex="1">
-          <mxGeometry height="68" width="68" x="730" y="406" as="geometry" />
+          <mxGeometry height="68" width="68" x="750" y="406" as="geometry" />
         </mxCell>
         <mxCell id="Y5DpHpY7eMORRWgUIDYY-23" edge="1" parent="1" source="Y5DpHpY7eMORRWgUIDYY-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Y5DpHpY7eMORRWgUIDYY-18">
           <mxGeometry relative="1" as="geometry">
@@ -113,10 +116,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Y5DpHpY7eMORRWgUIDYY-26" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Azure_Spring_Cloud.svg;" value="Api Notification" vertex="1">
-          <mxGeometry height="68" width="68" x="730" y="300" as="geometry" />
-        </mxCell>
-        <mxCell id="Y5DpHpY7eMORRWgUIDYY-27" edge="1" parent="1" source="Y5DpHpY7eMORRWgUIDYY-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.029;entryY=0.706;entryDx=0;entryDy=0;entryPerimeter=0;" target="Y5DpHpY7eMORRWgUIDYY-15">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry height="68" width="68" x="750" y="300" as="geometry" />
         </mxCell>
         <mxCell id="Y5DpHpY7eMORRWgUIDYY-30" edge="1" parent="1" source="Y5DpHpY7eMORRWgUIDYY-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#fad7ac;strokeColor=#b46504;" target="Y5DpHpY7eMORRWgUIDYY-18">
           <mxGeometry relative="1" as="geometry">
@@ -135,18 +135,18 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Y5DpHpY7eMORRWgUIDYY-28" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Azure_Spring_Cloud.svg;" value="Api Inventory" vertex="1">
-          <mxGeometry height="68" width="68" x="730" y="510" as="geometry" />
-        </mxCell>
-        <mxCell id="Y5DpHpY7eMORRWgUIDYY-32" edge="1" parent="1" source="Y5DpHpY7eMORRWgUIDYY-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.194;entryY=0.929;entryDx=0;entryDy=0;entryPerimeter=0;" target="Y5DpHpY7eMORRWgUIDYY-15">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Y5DpHpY7eMORRWgUIDYY-33" edge="1" parent="1" source="Y5DpHpY7eMORRWgUIDYY-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.723;entryY=0.929;entryDx=0;entryDy=0;entryPerimeter=0;" target="Y5DpHpY7eMORRWgUIDYY-15">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry height="68" width="68" x="750" y="510" as="geometry" />
         </mxCell>
         <mxCell id="N__fZidj4N92IAdxdLYN-7" edge="1" parent="1" source="N__fZidj4N92IAdxdLYN-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.009;entryY=0.778;entryDx=0;entryDy=0;entryPerimeter=0;" target="Y5DpHpY7eMORRWgUIDYY-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="N__fZidj4N92IAdxdLYN-8" edge="1" parent="1" source="N__fZidj4N92IAdxdLYN-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.009;entryY=0.324;entryDx=0;entryDy=0;entryPerimeter=0;" target="Y5DpHpY7eMORRWgUIDYY-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_5aWV9HYA6SHLXZJDk72-2" edge="1" parent="1" source="Y5DpHpY7eMORRWgUIDYY-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.01;entryY=0.814;entryDx=0;entryDy=0;entryPerimeter=0;" target="Y5DpHpY7eMORRWgUIDYY-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_5aWV9HYA6SHLXZJDk72-3" edge="1" parent="1" source="Y5DpHpY7eMORRWgUIDYY-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.01;entryY=0.951;entryDx=0;entryDy=0;entryPerimeter=0;" target="Y5DpHpY7eMORRWgUIDYY-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
