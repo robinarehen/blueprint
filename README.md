@@ -10,6 +10,12 @@ Se inicia este proyecto con la ayuda de **Google Gemini**, con el fin de crear u
 
 La meta es aplicar las mejores prácticas en arquitectura y desarrollo, será un proyecto colaborativo, donde a medida que se avanza, solicitaré ayuda a personas que tenga conocimiento y/o experiencia en el ámbito que yo no pueda cubrir. 
 
+## Arquitectura Global
+<img src="/drawio//Arquitectura.jpg" alt="Descripción de la imagen" width="60%">
+
+## Orquestación
+<img src="/drawio//Orquestación.jpg" alt="Descripción de la imagen" width="60%">
+
 # Estructura de la Solución
 Para que el proyecto sea robusto, sugiero que no sea un monolito, sino un ecosistema de microservicios que interactúen así:
 
@@ -52,13 +58,15 @@ Mientras ELK se encarga de los Logs (eventos específicos: `El usuario X compró
 2. **Integración nativa con K8s:** Kubernetes y Prometheus hablan el mismo idioma.
 3. **PromQL:** Un lenguaje de consultas muy potente para generar alertas complejas.
 
-### Comparativa
+## Comparativa
+Dado que se quiere una arquitectura robusta pero eficiente, yo usaría **Prometheus + Loki + Grafana**. 
+¿Por qué? Porque con Grafana puedes ver tanto tus métricas (Prometheus) como tus logs (Loki) en un mismo panel, sin tener que saltar entre Kibana y otra herramienta.
 
-|Necesidad			|Herramienta Líder			|Alternativa `Moderna/Ligera`
+|Necesidad			       |Herramienta Líder			       |Alternativa `Moderna/Ligera`
 |-                  |-                          |-
-|Logs (Texto)		|ELK (Potente, pesado)  |Loki (Ligero, integrado con Grafana)
+|Logs (Texto)		     |ELK (Potente, pesado)      |Loki (Ligero, integrado con Grafana)
 |Métricas (Números)	|Prometheus (Estándar K8s) 	|VictoriaMetrics (Alto rendimiento)
-|Visualización		|Kibana (Solo para ELK)    	|Grafana (Visualiza Logs, Métricas y Trazas)
+|Visualización		    |Kibana (Solo para ELK)    	|Grafana (Visualiza Logs, Métricas y Trazas)
 
 
 # Puntos Extra
