@@ -11,7 +11,15 @@ Se inicia este proyecto con la ayuda de **Google Gemini**, con el fin de crear u
 La meta es aplicar las mejores prácticas en arquitectura y desarrollo, será un proyecto colaborativo, donde a medida que se avanza, solicitaré ayuda a personas que tenga conocimiento y/o experiencia en el ámbito que yo no pueda cubrir. 
 
 ## Arquitectura Global
+En este apartado voy a plantear diferentes ideas de arquitecturas en función del flujo de la información con microservicios que me he encontrado en las diferentes empresas donde he tenido la oportunidad de colaborar.
+
+> Flujo en el que desde el **gateway** se lanza una **orden** por el cliente, esta **orden** publica el evento en **kafka** y los que estén subscritos a ese evento podrán iniciar a realizar su tarea.
+
 <img src="/drawio//Arquitectura.jpg" alt="Descripción de la imagen" width="60%">
+
+> Flujo en el que desde **gateway** se llama a una de las **Apis** y estas lanzan eventos a **kafka** para que los subscritos actúen en consecuencia.
+> 
+<img src="/drawio//Arquitectura-V2.jpg" alt="Descripción de la imagen" width="60%">
 
 ## Orquestación
 <img src="/drawio//Orquestacion.jpg" alt="Descripción de la imagen" width="60%">
