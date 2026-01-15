@@ -101,7 +101,7 @@ Para que el proyecto sea **blindado** y digno de un Arquitecto de Sistemas senio
 | **Kubernetes** | 1.28+ | Orquestación de microservicios (Kind/Minikube). |
 | **Docker** | 24.0+ | Contenerización de aplicaciones y servicios. |
 | **Helm** | 3.13+ | Manejo de despliegues y plantillas de K8s. |
-| **Terraform** | 1.6+ | Infraestructura como código (IaC). |
+| **Terraform** | 1.6+ | (Opcional inicial) Para definir la infraestructura como código (IaC). |
 
 ### 3. Persistencia y Mensajería (Event-Driven)
 | Componente | Versión | Implementación |
