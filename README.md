@@ -14,7 +14,7 @@ La meta es aplicar las mejores prácticas en arquitectura y desarrollo, será un
 <img src="/drawio//Arquitectura.jpg" alt="Descripción de la imagen" width="60%">
 
 ## Orquestación
-<img src="/drawio//Orquestación.jpg" alt="Descripción de la imagen" width="60%">
+<img src="/drawio//Orquestacion.jpg" alt="Descripción de la imagen" width="60%">
 
 # Estructura de la Solución
 Para que el proyecto sea robusto, sugiero que no sea un monolito, sino un ecosistema de microservicios que interactúen así:
