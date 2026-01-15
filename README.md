@@ -13,7 +13,7 @@ La meta es aplicar las mejores prácticas en arquitectura y desarrollo con una m
 ## Arquitectura Global
 En este apartado voy a plantear diferentes ideas de arquitecturas en función del flujo de la información, manejando microservicios y las técnicas que me he encontrado en las diferentes empresas donde he tenido la oportunidad de colaborar.
 
-> Flujo en el que desde el **gateway** se lanza una **orden** por el cliente, esta **orden** publica el evento en **kafka** y los que estén subscritos a ese evento podrán iniciar a realizar su tarea.
+> Flujo en el que desde el **gateway** se lanza una **orden** por el cliente, esta **orden** publica el evento en **kafka** y los que estén subscritos a ese evento podrán iniciar sus tareas.
 
 <img src="/drawio/Arquitectura.jpg" width="60%">
 
