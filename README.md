@@ -17,8 +17,8 @@ En este apartado voy a plantear diferentes ideas de arquitecturas en función de
 
 <img src="/drawio/Arquitectura.jpg" width="60%">
 
-> Flujo en el que desde **gateway** se llama a una de las **Apis** y estas lanzan eventos a **kafka** para que los subscritos actúen en consecuencia.
-> 
+> Flujo en el que desde el **gateway** se llama a una de las **Apis** y estas lanzan eventos a **kafka** para que los subscritos actúen en consecuencia.
+
 <img src="/drawio/Arquitectura-V2.jpg" width="60%">
 
 ## Orquestación
