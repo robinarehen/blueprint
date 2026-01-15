@@ -85,6 +85,48 @@ Para que el proyecto sea **blindado** y digno de un Arquitecto de Sistemas senio
 3. **Infrastructure as Code (IaC):** Usar Terraform para crear tu cluster de Kubernetes. Es mejor que crearlo manualmente.
 4. **Pruebas de Carga:** Usar k6 o JMeter para demostrar que tu arquitectura realmente aguanta el volumen de datos que planeas.
 
+## Versiones del Stack Tecnológico
+
+### 1. Lenguaje y Framework Base
+| Componente | Versión | Motivo / Nota |
+| :--- | :--- | :--- |
+| **Java JDK** | 21 (LTS) | Uso de Virtual Threads y Records para DTOs. |
+| **Spring Boot** | 3.2.x | Soporte nativo para Jakarta EE y Project Reactor. |
+| **Maven** | 3.9+ | Gestión de dependencias con Maven Central. |
+| **Project Reactor** | Latest | Core de programación reactiva (Mono/Flux). |
+
+### 2. Infraestructura y Orquestación
+| Componente | Versión | Rol en el Proyecto |
+| :--- | :--- | :--- |
+| **Kubernetes** | 1.28+ | Orquestación de microservicios (Kind/Minikube). |
+| **Docker** | 24.0+ | Contenerización de aplicaciones y servicios. |
+| **Helm** | 3.13+ | Manejo de despliegues y plantillas de K8s. |
+| **Terraform** | 1.6+ | Infraestructura como código (IaC). |
+
+### 3. Persistencia y Mensajería (Event-Driven)
+| Componente | Versión | Implementación |
+| :--- | :--- | :--- |
+| **Apache Kafka** | 3.6 (KRaft) | Bus de eventos asíncronos (sin Zookeeper). |
+| **Redis** | 7.2 | Caché y reserva de stock con TTL. |
+| **PostgreSQL** | 16.1 | DB relacional con driver R2DBC. |
+| **MongoDB** | 7.0 | NoSQL para catálogo de productos. |
+
+### 4. Calidad y Seguridad (DevSecOps)
+| Componente | Versión | Función |
+| :--- | :--- | :--- |
+| **SonarQube** | Latest (LTS) | Análisis estático de código (SAST). |
+| **Snyk** | CLI / Action | Escaneo de vulnerabilidades (SCA). |
+| **GitHub Actions** | N/A | Automatización de flujos de CI/CD. |
+| **Checkstyle** | Latest | Estándares de escritura de código. |
+
+### 5. Observabilidad (Telemetría)
+| Componente | Versión | Tipo de Dato |
+| :--- | :--- | :--- |
+| **Prometheus** | Latest | Métricas de rendimiento y salud. |
+| **Grafana** | 10.2+ | Visualización y Dashboards. |
+| **Loki** | 2.9 | Centralización de Logs. |
+| **Tempo** | Latest | Tracing distribuido (ID de correlación). |
+
 # Análisis de la Arquitectura
 Para que sea realmente escalable y resiliente, el flujo se organiza así:
 
@@ -111,4 +153,7 @@ Para que sea realmente escalable y resiliente, el flujo se organiza así:
 > Observabilidad y Calidad
 1. **Sidecars/Agents:** En Kubernetes, incluiremos agentes para enviar `logs a ELK` y `métricas a Prometheus`.
 2. **Pipeline de CI/CD:** Aquí es donde integramos `SonarQube y Snyk` para que cada commit sea analizado antes de llegar a los pods.
+
+
+
 
