@@ -166,11 +166,17 @@
         <mxCell id="dT8apQV9gDb9O--YlNEj-4" parent="dT8apQV9gDb9O--YlNEj-1" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_corporate_data_center;strokeColor=#7D8998;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#5A6C86;dashed=0;" value="Corporate data center" vertex="1">
           <mxGeometry height="692" width="860" x="220" y="78" as="geometry" />
         </mxCell>
-        <mxCell id="nWeFs6WKhzE8PsVQ40mF-3" connectable="0" parent="dT8apQV9gDb9O--YlNEj-1" style="group;fillColor=#d5e8d4;strokeColor=#82b366;container=0;" value="Container" vertex="1">
-          <mxGeometry height="528.85" width="550" x="430" y="171.15" as="geometry" />
+        <mxCell id="_AEraOpzh7-7wwymcWc0-0" connectable="0" parent="dT8apQV9gDb9O--YlNEj-1" style="group" value="" vertex="1">
+          <mxGeometry height="530" width="550" x="430" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="nWeFs6WKhzE8PsVQ40mF-3" connectable="0" parent="_AEraOpzh7-7wwymcWc0-0" style="group;fillColor=#d5e8d4;strokeColor=#82b366;container=0;" value="Containers" vertex="1">
+          <mxGeometry height="528.85" width="550" y="1.1500000000000057" as="geometry" />
+        </mxCell>
+        <mxCell id="nWeFs6WKhzE8PsVQ40mF-2" parent="_AEraOpzh7-7wwymcWc0-0" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" value="" vertex="1">
+          <mxGeometry height="50" width="60.98" as="geometry" />
         </mxCell>
         <mxCell id="PuTfdac8ZfO9rp86MEXL-0" parent="dT8apQV9gDb9O--YlNEj-1" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.groupCenter;grIcon=mxgraph.aws4.group_auto_scaling_group;grStroke=1;strokeColor=#d6b656;fillColor=#fff2cc;verticalAlign=top;align=center;dashed=1;spacingTop=25;" value="Auto Scaling&amp;nbsp;" vertex="1">
-          <mxGeometry height="421" width="249" x="561" y="250" as="geometry" />
+          <mxGeometry height="440" width="480" x="480" y="250" as="geometry" />
         </mxCell>
         <mxCell id="dT8apQV9gDb9O--YlNEj-9" parent="dT8apQV9gDb9O--YlNEj-1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Azure_Spring_Cloud.svg;flipH=1;legacyAnchorPoints=0;" value="Api Order" vertex="1">
           <mxGeometry height="68" width="68" x="594.5" y="459" as="geometry" />
@@ -195,9 +201,6 @@
         </mxCell>
         <mxCell id="uzmWbsCAgyWIJdbsOvik-1" parent="dT8apQV9gDb9O--YlNEj-1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Azure_Spring_Cloud.svg;flipH=1;legacyAnchorPoints=0;" value="Api Config Server" vertex="1">
           <mxGeometry height="74" width="74" x="831" y="455" as="geometry" />
-        </mxCell>
-        <mxCell id="nWeFs6WKhzE8PsVQ40mF-2" parent="dT8apQV9gDb9O--YlNEj-1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" value="" vertex="1">
-          <mxGeometry height="50" width="60.98" x="521" y="170" as="geometry" />
         </mxCell>
         <mxCell id="7QY79dQcULNHEK8Ii8iq-1" parent="dT8apQV9gDb9O--YlNEj-1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Azure_Spring_Cloud.svg;flipH=1;legacyAnchorPoints=0;" value="Api Zipkin" vertex="1">
           <mxGeometry height="74" width="74" x="834" y="563" as="geometry" />
