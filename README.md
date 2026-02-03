@@ -25,9 +25,10 @@ En este apartado voy a plantear diferentes ideas de arquitecturas en función de
 
 <img src="./drawio/Arquitectura-V2.jpg" width="60%">
 
-<hr/>
 
-> Flujo en el que cada microservicio interactua con su propia base de datos y publica en **KAFKA** para que los subscritos inicien sus flujos. 
+## Más utilizado
+
+Flujo en el que cada microservicio interactua con su propia base de datos y publica en **KAFKA**, para que los subscritos al **TOPIC** inicien sus flujos. 
 
 <img src="./drawio/Arquitectura-V3.jpg" width="60%">
 
