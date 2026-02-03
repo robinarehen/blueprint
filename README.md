@@ -15,22 +15,23 @@ En este apartado voy a plantear diferentes ideas de arquitecturas en función de
 
 <hr/>
 
+> Flujo en el que cada microservicio interactúa con su propia base de datos y publica en **KAFKA**, para que los subscritos al evento inicien sus flujos. <br>
+Este es un flujo tradicional en el cual se incluye **KAFKA** para que no exista acoplamiento entre los micros.  
+
+<img src="./drawio/Arquitectura-V3.jpg" width="60%">
+
+<hr/>
+
 > Flujo en el que desde el **gateway** se lanza una **orden** por el cliente, esta **orden** publica el evento en **kafka** y los que estén subscritos a ese evento podrán iniciar sus tareas.
 
 <img src="./drawio/Arquitectura.jpg" width="60%">
 
 <hr/>
 
-> Flujo en el que desde el **gateway** se llama a una de las **Apis** y estas lanzan eventos a **kafka** para que los subscritos actúen en consecuencia.
+> Flujo en el que desde el **gateway** se llama a una de las **Apis** y estas lanzan eventos a **kafka** para que los subscritos actúen en consecuencia. **(Mi idea)**
 
 <img src="./drawio/Arquitectura-V2.jpg" width="60%">
 
-
-## Más utilizado
-
-Flujo en el que cada microservicio interactua con su propia base de datos y publica en **KAFKA**, para que los subscritos al **TOPIC** inicien sus flujos. 
-
-<img src="./drawio/Arquitectura-V3.jpg" width="60%">
 
 ## Orquestación
 <img src="./drawio/Orquestacion.jpg" width="60%">
