@@ -13,16 +13,26 @@ La meta es aplicar las mejores prácticas en arquitectura y desarrollo con una m
 ## Arquitectura Global
 En este apartado voy a plantear diferentes ideas de arquitecturas en función del flujo de la información, manejando microservicios y las técnicas que me he encontrado en las diferentes empresas donde he tenido la oportunidad de colaborar.
 
+<hr/>
+
 > Flujo en el que desde el **gateway** se lanza una **orden** por el cliente, esta **orden** publica el evento en **kafka** y los que estén subscritos a ese evento podrán iniciar sus tareas.
 
-<img src="/drawio/Arquitectura.jpg" width="60%">
+<img src="./drawio/Arquitectura.jpg" width="60%">
+
+<hr/>
 
 > Flujo en el que desde el **gateway** se llama a una de las **Apis** y estas lanzan eventos a **kafka** para que los subscritos actúen en consecuencia.
 
-<img src="/drawio/Arquitectura-V2.jpg" width="60%">
+<img src="./drawio/Arquitectura-V2.jpg" width="60%">
+
+<hr/>
+
+> Flujo en el que cada microservicio interactua con su propia base de datos y publica en **KAFKA** para que los subscritos inicien sus flujos. 
+
+<img src="./drawio/Arquitectura-V3.jpg" width="60%">
 
 ## Orquestación
-<img src="/drawio/Orquestacion.jpg" width="60%">
+<img src="./drawio/Orquestacion.jpg" width="60%">
 
 # Estructura de la Solución
 Para que el proyecto sea robusto, sugiero que no sea un monolito, sino un ecosistema de microservicios que interactúen así:
