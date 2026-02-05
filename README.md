@@ -28,7 +28,7 @@ Este es un flujo tradicional en el cual se incluye **KAFKA** para que no exista 
 
 <hr/>
 
-> Flujo en el que desde el **gateway** se llama a una de las **Apis** y estas lanzan eventos a **kafka** para que los subscritos actúen en consecuencia. **(Mi idea)**
+> Flujo en el que desde el **gateway** se llama a una de las **Apis** y estas lanzan eventos a **kafka** para que los subscritos actúen en consecuencia. `Idea pendiente de validar`
 
 <img src="./drawio/Arquitectura-V2.jpg" width="60%">
 
