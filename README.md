@@ -1,5 +1,5 @@
 # Plantilla de Referencia (blueprint)
-Se inicia este proyecto con la ayuda de **Google Gemini**, con el fin de crear una plantilla que se puede replicar en cualquier **sector financiero o de retail masivo**,
+Se inicia este proyecto con la ayuda de las IA de **Google Gemini** y **Copilot**, con el fin de crear una plantilla que se puede replicar en cualquier **sector financiero o de retail masivo**,
  para crear una **Arquitectura Limpia** con los siguientes pilares. 
 
 1. Escalabilidad y Fiabilidad 
